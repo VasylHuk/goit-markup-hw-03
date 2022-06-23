@@ -1,0 +1,183 @@
+/* основний колір  #212121 */
+/* колір h1 #FFFFFF */
+/* колір наводки #2196F3 */
+/* другорядний колір #757575 */
+/* допоміжний колір rgba(255, 255, 255, 0.6) */
+/* основний фоновий колір #FFFFFF */
+/* другорядні фонові кольори #2F303A #E5E5E5 #F5F4FA */
+
+/*Тіло макету*/
+:root{
+    --primary-text-color: #212121;
+    --titel-text-color: #757575;
+    --accent-color: #2196F3;
+    --primary-white-color: #FFFFFF;
+    --button-bg-color: #F5F4FA;
+    --footer-bg-color: #2F303A;
+}
+
+body{
+    font-family: roboto, serif;
+    background-color: var(--primary-white-color);
+    color: var(--primary-text-color);
+}
+
+ul {
+    list-style: none;
+}
+
+/* Шапка макету */
+.logo{
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+    text-decoration: none;
+}
+    
+.logo-nav{
+    color: var(--primary-text-color);
+}
+
+.site-nav a{
+    color: var(--primary-text-color);
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.site-nav a:hover,
+.site-nav a:focus{
+    color: var(--accent-color);
+}
+
+.site-nav .link.current {
+    color: var(--accent-color);
+}
+
+.auth-nav a{
+    color: var(--titel-text-color);
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.auth-nav a:hover,
+.auth-nav a:focus{
+    color: var(--accent-color);
+}
+
+/* Основна частина */
+/* Герой */
+.hero{
+    background: #2F303A;
+    text-align: center;
+    align-items: center;
+}
+
+.hero-main{
+    color: var(--primary-white-color);
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+/* Кнопка */
+.button-hero {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.button-portfolio {
+    color: var(--primary-text-color);
+    background-color: var(--button-bg-color);
+    cursor: pointer;
+    font-family: inherit;
+}
+
+/* Секції */
+.our{
+    background-color: var(--button-bg-color);
+}
+.teams .features .titel{
+    color: var(--primary-text-color);
+}
+
+.bg-color{
+    background-color: var(--primary-white-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.features .text {
+    color: var(--titel-text-color);
+}
+
+.work-name{
+    color: var(--primary-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 0.06em;
+}
+
+.work-position{
+    color: var(--titel-text-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+}
+
+/* Підвал */
+.footer-options{
+    background-color: var(--footer-bg-color);
+}
+
+.logo-footer {
+    color: var(--primary-white-color);
+}
+
+.contacts a{
+    color: var(--primary-white-color);
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+.contacts-address a{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+}
+
+.contacts-address a:hover,
+.contacts-address a:focus {
+    color: var(--accent-color);
+}
