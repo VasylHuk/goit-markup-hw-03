@@ -15,7 +15,7 @@
     --button-bg-color: #F5F4FA;
     --hero-footer-bg-color: #2F303A;
     --contact-add-color: rgba(255, 255, 255, 0.6);
-    --border-color: #EEEEEE;
+    --border-color: #ECECEC;
 }
 html {
     box-sizing: border-box;
@@ -31,7 +31,7 @@ h1,
 h2,
 h3,
 p {
-    margin-top: 0;
+    margin: 0;
 }
 
 body {
@@ -68,12 +68,7 @@ address {
 /* Шапка макету */
 /* Line */
 .main-content {
-    /* position: absolute; */
-    /* width: 1600px; */
-    /* height: 0px; */
-    /* left: 0px; */
-    /* top: 80px; */
-    border: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
 }
 
 .container {
@@ -100,7 +95,8 @@ address {
     line-height: 1.19;
     color: var(--accent-color);
     text-decoration: none;
-    padding: 25px 93px 25px 0px;
+    padding: 24px 0px 25px 0px;
+    margin-right: 93px;
 }
 
 .logo-nav {
@@ -109,9 +105,6 @@ address {
 
 .site-nav {
     display: flex;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    padding-right: 331px;
 }
 
 .site-nav .item:not(:last-child) {
@@ -125,6 +118,8 @@ address {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .site-nav a:hover,
@@ -139,6 +134,9 @@ address {
 .auth-nav {
     display: flex;
     align-items: center;
+    margin-left: auto;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .auth-nav .item + .item {
@@ -270,6 +268,7 @@ address {
  
 .text-item {
     line-height: 1.71;
+    color: var(--titel-text-color);
 }
 
 .bg-color {
@@ -286,22 +285,23 @@ address {
     margin-right: 30px;
 }
 
+.person {
+    margin-bottom: 30px;
+}
+
 .title-name {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
-    padding-top: 50px;
     text-align: center;
-    margin: 0 auto;
+    margin-bottom: 10px;
 }
 
 .text {
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
-    padding-top: 10px;
-    padding-bottom: 30px;
-    margin: 0 auto;
+    margin-bottom: 30px;
 }
 
 .features .text {
@@ -367,7 +367,6 @@ address {
     width: 370px;
     margin-right: 30px;
     margin-bottom: 30px;
-    border: 1px solid var(--border-color);
 }
 
 .work-item:nth-child(3n) {
@@ -378,22 +377,27 @@ address {
     margin-bottom: 0;
 }
 
+.work-box {
+    padding: 20px 24px;
+    border-left: 1px solid var(--border-color);
+    border-right: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+
+}
+
 .work-name {
     color: var(--primary-text-color);
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    padding: 20px 24px 4px 24px;
-    margin: 0 auto;
+    margin-bottom: 4px;
 }
 
 .work-position {
     color: var(--titel-text-color);
     font-size: 16px;
     line-height: 1.87;
-    padding: 0px 24px 20px 24px;
-    margin: 0 auto;
 }
 
 /* Підвал */
@@ -422,8 +426,8 @@ address {
     line-height: 1.19;
 }
 
-.contacts {
-    padding-top: 20px;
+.info {
+    margin-top: 20px;
 }
 
 .contacts a {
@@ -434,8 +438,8 @@ address {
 }
 
 .mail {
-    padding-top: 9px;
-    padding-bottom: 9px;
+    margin-top: 9px;
+    margin-bottom: 9px;
 }
 
 .contacts-address a {
